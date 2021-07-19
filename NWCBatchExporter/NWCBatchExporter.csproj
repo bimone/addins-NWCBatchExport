@@ -1,0 +1,114 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <DebugEngines>
+      {351668CC-8477-4fbf-BFE3-5F1006E4DB1F}
+    </DebugEngines>
+    <AssemblyTitle>BatchExporter</AssemblyTitle>
+    <Product>BatchExporter</Product>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <AssemblyVersion>21.0.0.0</AssemblyVersion>
+    <FileVersion>21.0.0.0</FileVersion>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <PostBuildEvent>
+      copy "$(MSBuildProjectDirectory)\addin.addin" "%25appdata%25\Autodesk\Revit\Addins\2021\$(MSBuildProjectName).addin"
+      xcopy "$(MSBuildProjectDirectory)\$(OutputPath)$(TargetFramework)\*" "%25appdata%25\Autodesk\Revit\Addins\2021\NWCBatchExporter\" /S /E /R /I /F /Y
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Revit.RevitApi.x64" Version="2021.0.0">
+    </PackageReference>
+    <PackageReference Include="Revit.RevitApiUI.x64" Version="2021.0.0">
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\Resource.fr.Designer.cs">
+      <DependentUpon>Resource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Update="Resources\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ExportOptionsWindow.xaml.cs">
+      <DependentUpon>ExportOptionsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\NWCBatchExporterWindow.xaml.cs">
+      <DependentUpon>NWCBatchExporterWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <Page Include="Views\ExportOptionsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NWCBatchExporterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TooIconNoNewVersionMiniGray.png" />
+    <Resource Include="Resources\ToolIconExitMiniGray.png" />
+    <Resource Include="Resources\ToolIconHelpMini.png" />
+    <Resource Include="Resources\ToolIconHelpMiniGray.png" />
+    <Resource Include="Resources\ToolIconNewVersionMini.png" />
+    <Resource Include="Resources\ToolIconNewVersionMiniGray.png" />
+    <Resource Include="Resources\ToolIconNoConnectMini.png" />
+    <Resource Include="Resources\ToolIconNoConnectMiniGray.png" />
+    <Resource Include="Resources\ToolIconSupportMiniGray.png" />
+    <None Include="Addin.addin">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <Resource Include="Resources\appicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resources\apps.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\button.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\mail.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Resource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,67 @@
+﻿<Window x:Class="NWCBatchExporter.Views.ExportOptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:res="clr-namespace:NWCBatchExporter.Resources"
+        Title="{x:Static res:Resource.WindowsTitle_NavisworksOptions}" SizeToContent="WidthAndHeight" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Icon="../Resources/appicon.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_ConvertConstructionParts}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <CheckBox Grid.Row="0" Grid.Column="1" x:Name="chbxConstructionParts" HorizontalAlignment="Left" VerticalAlignment="Center" Click="chbxConstructionParts_Click" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_ConvertElementIds}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <CheckBox Grid.Row="1" Grid.Column="1" x:Name="chbxElementIds" HorizontalAlignment="Left" VerticalAlignment="Center" Click="chbxElementIds_Click" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_ConvertElementParameters}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <CheckBox Grid.Row="2" Grid.Column="1" x:Name="chbxElementProperies" HorizontalAlignment="Left" VerticalAlignment="Center" Click="chbxElementProperies_Click" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="3" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_ConvertElementProperties}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <CheckBox Grid.Row="3" Grid.Column="1" x:Name="chbxLinkedFiles" HorizontalAlignment="Left" VerticalAlignment="Center" Click="chbxLinkedFiles_Click" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="4" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_ConvertLinkedFiles}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <ComboBox Grid.Row="4" Grid.Column="1" x:Name="cbConvertElParameters" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" SelectionChanged="cbConvertElParameters_SelectionChanged" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="5" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_ConvertRoomAsAttribute}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <CheckBox Grid.Row="5" Grid.Column="1" x:Name="chbxRoomAttr" HorizontalAlignment="Left" VerticalAlignment="Center" Click="chbxRoomAttr_Click" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="6" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_ConvertUrls}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <CheckBox Grid.Row="6" Grid.Column="1" x:Name="chbxConvertURL" HorizontalAlignment="Left" VerticalAlignment="Center" Click="chbxConvertURL_Click" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="7" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_Coordinates}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <ComboBox Grid.Row="7" Grid.Column="1" x:Name="cbCoordinates" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" SelectionChanged="cbCoordinates_SelectionChanged" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="8" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_DivideFileIntoLeverls}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <CheckBox Grid.Row="8" Grid.Column="1" x:Name="chbxDivideFiles" HorizontalAlignment="Left" VerticalAlignment="Center" Click="chbxDivideFiles_Click" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="9" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_Export}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <ComboBox Grid.Row="9" Grid.Column="1" x:Name="cbExport" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" SelectionChanged="cbExport_SelectionChanged" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="10" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_ExportRoomGeometry}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <CheckBox Grid.Row="10" Grid.Column="1" x:Name="chbxExportGeometry" HorizontalAlignment="Left" VerticalAlignment="Center" Click="chbxExportGeometry_Click" Margin="5,0,5,0"/>
+
+        <Label Grid.Row="11" Grid.Column="0" Content="{x:Static res:Resource.FormLbl_TryAndFindMissingMaterials}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,5,0"/>
+        <CheckBox Grid.Row="11" Grid.Column="1" x:Name="chbxMissingMaterials" HorizontalAlignment="Left" VerticalAlignment="Center" Click="chbxMissingMaterials_Click" Margin="5,0,5,0"/>
+
+        <StackPanel Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,10,0,10">
+            <Button x:Name="btnDefault" Content="{x:Static res:Resource.FormBtn_Default}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Height="40" Click="btnDefault_Click" FontWeight="Bold" Margin="5,0,5,0"/>
+            <Button x:Name="btnClose" Content="{x:Static res:Resource.FormBtn_Close}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Height="40" Click="btnClose_Click" Margin="5,0,5,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

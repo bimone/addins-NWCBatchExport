@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FormBtn_Browse" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="FormBtn_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="FormBtn_CheckAll" xml:space="preserve">
+    <value>Check All</value>
+  </data>
+  <data name="FormBtn_CheckNone" xml:space="preserve">
+    <value>Check None</value>
+  </data>
+  <data name="FormBtn_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="FormBtn_Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="FormBtn_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="FormBtn_ExportOptions" xml:space="preserve">
+    <value>Export Options</value>
+  </data>
+  <data name="FormLbl_ConvertConstructionParts" xml:space="preserve">
+    <value>Convert construction parts</value>
+  </data>
+  <data name="FormLbl_ConvertElementIds" xml:space="preserve">
+    <value>Convert element Ids</value>
+  </data>
+  <data name="FormLbl_ConvertElementParameters" xml:space="preserve">
+    <value>Convert element parameters</value>
+  </data>
+  <data name="FormLbl_ConvertElementProperties" xml:space="preserve">
+    <value>Convert element properties</value>
+  </data>
+  <data name="FormLbl_ConvertLinkedFiles" xml:space="preserve">
+    <value>Convert linked files</value>
+  </data>
+  <data name="FormLbl_ConvertRoomAsAttribute" xml:space="preserve">
+    <value>Convert room as attribute</value>
+  </data>
+  <data name="FormLbl_ConvertUrls" xml:space="preserve">
+    <value>Convert URLs</value>
+  </data>
+  <data name="FormLbl_Coordinates" xml:space="preserve">
+    <value>Coordinates</value>
+  </data>
+  <data name="FormLbl_DivideFileIntoLeverls" xml:space="preserve">
+    <value>Divide File into Levels</value>
+  </data>
+  <data name="FormLbl_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="FormLbl_ExportRoomGeometry" xml:space="preserve">
+    <value>Export room geometry</value>
+  </data>
+  <data name="FormLbl_FolderPath" xml:space="preserve">
+    <value>Folder Path :</value>
+  </data>
+  <data name="FormLbl_TryAndFindMissingMaterials" xml:space="preserve">
+    <value>Try and find missing materials</value>
+  </data>
+  <data name="FormLbl_Views" xml:space="preserve">
+    <value>Views :</value>
+  </data>
+  <data name="FormLbl_ViewSelected" xml:space="preserve">
+    <value>View(s) selected</value>
+  </data>
+  <data name="FormLst_All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="FormLst_Elements" xml:space="preserve">
+    <value>Elements</value>
+  </data>
+  <data name="FormLst_Internal" xml:space="preserve">
+    <value>Internal</value>
+  </data>
+  <data name="FormLst_Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="FormLst_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="FormLst_SelectedElements" xml:space="preserve">
+    <value>SelectedElements</value>
+  </data>
+  <data name="FormLst_Shared" xml:space="preserve">
+    <value>Shared</value>
+  </data>
+  <data name="FormLst_View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="FormTitle_BrowseNavisworksOutputFiles" xml:space="preserve">
+    <value>Browse Navisworks Output Files</value>
+  </data>
+  <data name="FormTitle_ViewsExport" xml:space="preserve">
+    <value>Views Export</value>
+  </data>
+  <data name="MsgBoxInfo_ExportProcessCanceledByTheUser" xml:space="preserve">
+    <value>Export process canceled by the user</value>
+  </data>
+  <data name="MsgBoxInfo_NeedInstallAutodesk" xml:space="preserve">
+    <value>You need to install the Autodesk Navisworks NWC export utility before using NWC Batch Export.\n\nClick YES if you want to be redirected to the Autodesk download page.</value>
+  </data>
+  <data name="MsgBoxInfo_ProjectMustBeSaved" xml:space="preserve">
+    <value>The project must be saved before using this tool.</value>
+  </data>
+  <data name="MsgBoxInfo_SelectPathFirst" xml:space="preserve">
+    <value>Select path first.</value>
+  </data>
+  <data name="MsgBoxInfo_SucessfulFailed" xml:space="preserve">
+    <value>Sucessful : {0} view(s), Failed : {1} view(s) - {2}</value>
+  </data>
+  <data name="MsgBoxInfo_SucessfulXFailed0" xml:space="preserve">
+    <value>Sucessful : {0} view(s), Failed: 0 view</value>
+  </data>
+  <data name="MsgBoxTitle_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="MsgBoxTitle_ExportResults" xml:space="preserve">
+    <value>Export results</value>
+  </data>
+  <data name="MsgBoxTitle_MissingUtility" xml:space="preserve">
+    <value>Missing utility</value>
+  </data>
+  <data name="MsgBoxTitle_ProjectNotSaved" xml:space="preserve">
+    <value>Project not saved</value>
+  </data>
+  <data name="WindowsTitle_NavisworksOptions" xml:space="preserve">
+    <value>Navisworks Options</value>
+  </data>
+</root>

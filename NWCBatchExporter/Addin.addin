@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>BatchExporter</Name>
+    <Assembly>NWCBatchExporter\NWCBatchExporter.dll</Assembly>
+    <AddInId>01894EFB-E0C3-489E-9A44-7D64A4579FB0</AddInId>
+    <FullClassName>NWCBatchExporter.Button</FullClassName>
+    <VendorId>BIMO</VendorId>
+  </AddIn>
+</RevitAddIns>
