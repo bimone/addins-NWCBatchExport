@@ -220,7 +220,9 @@
     <value>Export process canceled by the user</value>
   </data>
   <data name="MsgBoxInfo_NeedInstallAutodesk" xml:space="preserve">
-    <value>You need to install the Autodesk Navisworks NWC export utility before using NWC Batch Export.\n\nClick YES if you want to be redirected to the Autodesk download page.</value>
+    <value>You need to install the Autodesk Navisworks NWC export utility for Revit {0} before using NWC Batch Export.
+
+Click YES to open the Autodesk download page, then choose the Navisworks Exporters {0} version.</value>
   </data>
   <data name="MsgBoxInfo_ProjectMustBeSaved" xml:space="preserve">
     <value>The project must be saved before using this tool.</value>
